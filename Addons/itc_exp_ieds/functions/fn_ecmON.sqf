@@ -1,4 +1,7 @@
 [{
+	if (!("itc_exp_ecmL" in (items player)) && !("itc_exp_ecmM" in (items player)) && !("itc_exp_ecmH" in (items player))) then {
+		player setVariable ["itc_exp_ecm",0,true];
+	};
 	if ((player getVariable "itc_exp_ecm")==0) then {
 		[_this # 1] call CBA_fnc_removePerFrameHandler;
 		{

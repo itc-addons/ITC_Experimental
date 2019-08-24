@@ -35,6 +35,43 @@ class CfgFunctions
 	};
 };
 
+class cfgWeapons {
+	class ACE_HuntIR_monitor;
+	class itc_exp_ecmL : ACE_HuntIR_monitor {
+		scope = 2;
+		displayName = "ECM Light";
+		descriptionShort = "Protects agaisnt RCIEDs up to 5m.";
+		author = "Herbiie";
+		model = "\a3\Weapons_F\Ammo\mag_radio.p3d";
+		picture = "\A3\Weapons_F\Data\UI\gear_item_radio_ca.paa";
+		class itemInfo {
+			mass = 10;
+		};
+	};
+	class itc_exp_ecmM : ACE_HuntIR_monitor {
+		scope = 2;
+		displayName = "ECM Medium";
+		descriptionShort = "Protects agaisnt RCIEDs up to 25m.";
+		author = "Herbiie";
+		model = "\a3\Weapons_F\Ammo\mag_radio.p3d";
+		picture = "\A3\Weapons_F\Data\UI\gear_item_radio_ca.paa";
+		class itemInfo {
+			mass = 40;
+		};
+	};
+	class itc_exp_ecmH : ACE_HuntIR_monitor {
+		scope = 2;
+		displayName = "ECM Heavy";
+		descriptionShort = "Protects agaisnt RCIEDs up to 50m.";
+		author = "Herbiie";
+		model = "\a3\Weapons_F\Ammo\mag_radio.p3d";
+		picture = "\A3\Weapons_F\Data\UI\gear_item_radio_ca.paa";
+		class itemInfo {
+			mass = 80;
+		};
+	};
+};
+
 class CfgFactionClasses
 {
 	class NO_CATEGORY;
