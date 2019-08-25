@@ -2,9 +2,12 @@ class CfgPatches
 {
 	class itc_exp_ieds
 	{
+		author = "ITC Addons Team";
+		authors[] = {"Herbiie","ToadBall","Yax","VKing"};
 		units[] = {"itc_exp_moduleIEDs"};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"A3_Modules_F","ace_interaction","ace_interact_menu","ace_common"};
+		weapons[] = {"itc_exp_ecmL","itc_exp_ecmM","itc_exp_ecmH"};
 	};
 };
 
@@ -36,39 +39,44 @@ class CfgFunctions
 };
 
 class cfgWeapons {
-	class ACE_HuntIR_monitor;
-	class itc_exp_ecmL : ACE_HuntIR_monitor {
+	class ACE_ItemCore;
+    class CBA_MiscItem_ItemInfo;
+    
+	class itc_exp_ecmL : ACE_ItemCore {
 		scope = 2;
+        scopeArsenal = 2;        
 		displayName = "ECM Light";
 		descriptionShort = "Protects agaisnt RCIEDs up to 5m.";
 		author = "Herbiie";
 		model = "\a3\Weapons_F\Ammo\mag_radio.p3d";
 		picture = "\A3\Weapons_F\Data\UI\gear_item_radio_ca.paa";
-		class itemInfo {
+		class itemInfo: CBA_MiscItem_ItemInfo  {
 			mass = 10;
 		};
 	};
-	class itc_exp_ecmM : ACE_HuntIR_monitor {
+	class itc_exp_ecmM : ACE_ItemCore {
 		scope = 2;
+        scopeArsenal = 2;        
 		displayName = "ECM Medium";
 		descriptionShort = "Protects agaisnt RCIEDs up to 25m.";
 		author = "Herbiie";
 		model = "\a3\Weapons_F\Ammo\mag_radio.p3d";
 		picture = "\A3\Weapons_F\Data\UI\gear_item_radio_ca.paa";
-		class itemInfo {
+		class itemInfo: CBA_MiscItem_ItemInfo  {
 			mass = 40;
 		};
 	};
-	class itc_exp_ecmH : ACE_HuntIR_monitor {
+	class itc_exp_ecmH : ACE_ItemCore {
 		scope = 2;
+        scopeArsenal = 2;
 		displayName = "ECM Heavy";
 		descriptionShort = "Protects agaisnt RCIEDs up to 50m.";
 		author = "Herbiie";
 		model = "\a3\Weapons_F\Ammo\mag_radio.p3d";
 		picture = "\A3\Weapons_F\Data\UI\gear_item_radio_ca.paa";
-		class itemInfo {
-			mass = 80;
-		};
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 80;
+        };        
 	};
 };
 
