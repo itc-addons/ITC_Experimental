@@ -1,7 +1,7 @@
 class cfgAmmo {
-	class FlareBase;
+	class GrenadeHand_stone;
 	class submunitionBase;
-	class itc_exp_riotBase: FlareBase {
+	class itc_exp_riotBase: GrenadeHand_stone {
 		ace_frag_enabled = 0;
 		explosionSoundEffect = "";
 		explosionForceCoef = 0;
@@ -18,6 +18,8 @@ class cfgAmmo {
 		submunitionAmmo[] = {"itc_exp_riot1",0.2,"itc_exp_riot2",0.2,"itc_exp_riot3",0.2,"itc_exp_riot4",0.2,"itc_exp_riot5",0.2};
 		submunitionConeAngle = 3;
 		submunitionConeType[] = {"poissondisccenter",1};
+		aiAmmoUsageFlags = "64 + 128"; 
+		
 	};
 	class itc_exp_riot1: submunitionBase {
 		model = "\A3\Props_F_Orange\Humanitarian\Supplies\WaterBottle_01_empty_F.p3d";

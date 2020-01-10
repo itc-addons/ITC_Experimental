@@ -11,9 +11,9 @@ class CfgPatches
 	};
 };
 
-#include "config\cfgFunctions.hpp"
+#include "configs\cfgFunctions.hpp"
 
-#include "config\cfgWeapons.hpp"
+#include "configs\cfgWeapons.hpp"
 
 
 
@@ -32,6 +32,6 @@ class Extended_PostInit_EventHandlers {
 	};
 };
 
-#include "config\cfgVehicles.hpp"
+#include "configs\cfgVehicles.hpp"
 
 

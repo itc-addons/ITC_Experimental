@@ -7,6 +7,5 @@ class CfgMagazines {
 		descriptionShort = "When revolution is in the air, grab anything to hand and throw it.";
 		displayName = "Riot Object";
 		displayNameShort = "Riot";
-		
 	};
 };
