@@ -13,7 +13,9 @@ class cfgAmmo {
 		multiSoundHit[] = {};
 	};
 	class itc_exp_riotStart: itc_exp_riotBase {
-		fuseDistance = 0.5;
+		triggerTime = 0.05;
+        triggerDistance = 0.1;
+		fuseDistance = 0.05;
 		ace_frag_enabled = 0;
 		submunitionAmmo[] = {"itc_exp_riot1",0.2,"itc_exp_riot2",0.2,"itc_exp_riot3",0.2,"itc_exp_riot4",0.2,"itc_exp_riot5",0.2};
 		submunitionConeAngle = 3;
