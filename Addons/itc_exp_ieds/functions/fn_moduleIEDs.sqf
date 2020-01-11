@@ -13,11 +13,13 @@ _friendlySides = [];
 		_friendlySides pushBackUnique (side _x);
 	};
 } forEach _syncedObjects;
+
 _ied = _iedClass createVehicle (position _logic);
 _ied setDir (random 360);
 private _circuit = objnull;
+
 if (_collapsing) then {
-	switch (_IEDType) do {
+	switch (_iedClass) do {
 	case "ACE_IEDLandSmall_Command_Ammo" : {
 	_circuit = "Land_MetalWire_F" createVehicle (position _logic);
 	_circuit attachTo [_ied,[0,0,0.06]];

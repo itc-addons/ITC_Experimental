@@ -28,12 +28,12 @@ class CfgVehicles
 		isGlobal = 0;
 		isTriggerActivated = 0;
 		is3DEN = 0;
-		curatorInfoType = "RscDisplayAttributeModuleIEDs";
+		curatorInfoType = "RscDisplayAttributeModuleRiot";
 		class Attributes: AttributesBase
 		{
 			class RiotSide: Combo
 			{
-				property = "itc_exp_moduleIED_RiotSide";
+				property = "itc_exp_moduleRiot_RiotSide";
 				displayName = "Rioters Side";
 				tooltip = "Select which side the rioters will be affiliated with";
 				typeName = "STRING";

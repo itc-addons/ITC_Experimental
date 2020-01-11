@@ -15,4 +15,4 @@ _unit addMagazine "itc_exp_throwObject";
 	if (count magazines _unit == 0) then {
 		_unit addMagazine "itc_exp_throwObject";
 	};
-},1,_unit]  call CBA_fnc_addPerFrameHandler;
+},5,_unit]  call CBA_fnc_addPerFrameHandler;

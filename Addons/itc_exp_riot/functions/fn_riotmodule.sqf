@@ -9,6 +9,7 @@ switch (_sideString) do {
 };
 
 private _group = createGroup _side;
+_group setCombatMode "RED";
 
 private _syncedObjects = synchronizedObjects _logic;
 
