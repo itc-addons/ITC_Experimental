@@ -17,8 +17,24 @@ _ied = _iedClass createVehicle (position _logic);
 _ied setDir (random 360);
 private _circuit = objnull;
 if (_collapsing) then {
+	switch (_IEDType) do {
+	case "ACE_IEDLandSmall_Command_Ammo" : {
 	_circuit = "Land_MetalWire_F" createVehicle (position _logic);
 	_circuit attachTo [_ied,[0,0,0.06]];
+	};
+	case "ACE_IEDLandBig_Command_Ammo" : {
+	_circuit = "Land_MetalWire_F" createVehicle (position _logic);
+	_circuit attachTo [_ied,[0,0,0.06]];
+	};
+	case "ACE_IEDUrbanSmall_Command_Ammo" : {
+	_circuit = "Land_MetalWire_F" createVehicle (position _logic);
+	_circuit attachTo [_ied,[-0.2,-0.02,0.06]];
+	};
+	case "ACE_IEDUrbanBig_Command_Ammo" : {
+	_circuit = "Land_MetalWire_F" createVehicle (position _logic);
+	_circuit attachTo [_ied,[0.1,0.1,0.1]];
+	};
+	}
 };
 
 switch (_IEDType) do {
