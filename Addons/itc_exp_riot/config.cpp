@@ -11,6 +11,17 @@ class CfgPatches
 	};
 };
 
+class CfgFactionClasses
+{
+	class NO_CATEGORY;
+	class itc_exp_modules: NO_CATEGORY
+	{
+		displayName = "ITC Experimental";
+	};
+};
+
 #include "config\cfgMagazines.hpp"
 #include "config\cfgAmmo.hpp"
 #include "config\cfgWeapons.hpp"
+#include "config\cfgFunctions.hpp"
+#include "config\cfgVehicles.hpp"
