@@ -1,0 +1,17 @@
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "PB Moss has survived the night";
+		description = "";
+		pictureBackground = "";
+		picture = "flag_Nato";
+	};
+};
+
+author			= "Herbiie";
+OnLoadName		= "ITC Experimental: Riot Showcase";
+briefingName		= "ITC Experimental: Riot Showcase";
+OnLoadMission	= "Malden Locals are unhappy at the NATO occupation of Malden";
+overviewText = "After the events in the Mediterranean in 2035, NATO occupied the strategic island of Malden to prevent CSAT denying access to the Gibraltar Straits.<br/>The local population in Malden were unhappy about NATO troops being present, not wanting to be drawn into conflict for a third time in recent history.<br/>NATO forces in La Trinitie became under siege at PB Moss, with protests blocking both entrances.";

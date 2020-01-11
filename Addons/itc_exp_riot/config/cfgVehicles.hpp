@@ -48,11 +48,11 @@ class CfgVehicles
 		class ModuleDescription: ModuleDescription
 			{
 				description = "Syncing this module to civilian units will turn that unit into a rioter. Rioters will throw random objects at units in an opposing side. Rioters will still run around, if you want your rioters to remain station put this disableai 'path' into their init field";
-					position = 1;
-					direction = 1;
-					optional = 1;
-					duplicate = 1;
-					synced[] = {"AnyAI"}; 
+				position = 1;
+				direction = 1;
+				optional = 1;
+				duplicate = 1;
+				synced[] = {"AnyAI"}; 
 			};
 		};
 	};
