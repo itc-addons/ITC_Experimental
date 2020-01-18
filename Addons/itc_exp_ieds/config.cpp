@@ -26,11 +26,6 @@ class CfgFactionClasses
 	};
 };
 
-class Extended_PostInit_EventHandlers {
-	class itc_exp_functions {
-		init = "call ('\itc_exp_ieds\postInit.sqf' call SLX_XEH_COMPILE)";
-	};
-};
 
 #include "configs\cfgVehicles.hpp"
 

@@ -22,5 +22,11 @@ class CfgFunctions
 			file = "\itc_exp_ieds\functions";
 			class ecmOn_ACRE{};
 		};
+		class postInit
+		{
+			postInit = 1;
+			file = "\itc_exp_ieds\functions";
+			class postInit{};
+		};
 	};
 };
