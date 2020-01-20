@@ -1,8 +1,8 @@
-params ["", "", "", "", "", "", "_projectile"];
+params ["", "", "", "", "", "", "_projectile","_gunner"];
 
-if (!local _projectile) exitWith {};
+if (!local _gunner) exitWith {};
 
-private _riotAmmo = "((configName _x) isKindOf ['itc_exp_riotStart', configFile >> 'CfgAmmo']) && !(_type == 'itc_exp_riotStart')" configClasses (configFile >> "CfgAmmo");
+private _riotAmmo = "((configName _x) isKindOf ['itc_exp_riotStart', configFile >> 'CfgAmmo']) && !((configName _x) == 'itc_exp_riotStart')" configClasses (configFile >> "CfgAmmo");
 
 private _vel = velocity _projectile;
 private _pos = position _projectile;
