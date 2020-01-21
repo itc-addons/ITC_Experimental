@@ -78,5 +78,56 @@ class CfgVehicles
 		};
 	};
 	
+	class Man;
+	class CAManBase: Man {
+		class ACE_SelfActions {
+			class ACE_Equipment {
+				class ITC_Exp_ECM {
+				  displayName = "ECM";
+				  condition = "[ACE_player] call itc_exp_fnc_hasECM";
+				  statement = "";
+				  exceptions[] = {"isNotDragging"};
+				  showDisabled = 0;
+				  priority = 0;
+				  
+				  class ITC_Exp_ECMLon {
+					displayName = "Turn on: ECM (Light)";
+					condition = "('itc_exp_ecmL' in (items _player)) && !(_player getVariable ['itc_exp_ecm',false])";
+					statement = "[_player,5] call itc_exp_fnc_ecmON"; 
+					priority = 1;
+					showDisabled = 1;
+					exceptions[] = {"isNotDragging"};
+					enableInside = 1;
+				  };
+				  class ITC_Exp_ECMLoff: ITC_Exp_ECMLon {
+					displayName = "Turn off: ECM (Light)";
+					condition = "('itc_exp_ecmL' in (items _player)) && (_player getVariable ['itc_exp_ecm',true])";
+					statement = "[_player,5] call itc_exp_fnc_ecmOff"; 
+				  };   
+				  class ITC_Exp_ECMMon: ITC_Exp_ECMLon {
+					displayName = "Turn on: ECM (Medium)";
+					condition = "('itc_exp_ecmM' in (items _player)) && !(_player getVariable ['itc_exp_ecm',false])";
+					statement = "[_player,25] call itc_exp_fnc_ecmON"; 
+				  };  
+				  class ITC_Exp_ECMMoff: ITC_Exp_ECMLon {
+					displayName = "Turn off: ECM (Medium)";
+					condition = "('itc_exp_ecmM' in (items _player)) && (_player getVariable ['itc_exp_ecm',true])";
+					statement = "[_player,25] call itc_exp_fnc_ecmOff"; 
+				  };       
+				  class ITC_Exp_ECMHon: ITC_Exp_ECMLon {
+					displayName = "Turn on: ECM (Heavy)";
+					condition = "('itc_exp_ecmH' in (items _player)) && !(_player getVariable ['itc_exp_ecm',false])";
+					statement = "[_player,50] call itc_exp_fnc_ecmON"; 
+				  };   
+				  class ITC_Exp_ECMHoff: ITC_Exp_ECMLon {
+					displayName = "Turn off: ECM (Heavy)";
+					condition = "('itc_exp_ecmH' in (items _player)) && (_player getVariable ['itc_exp_ecm',true])";
+					statement = "[_player,50] call itc_exp_fnc_ecmOff"; 
+				  }; 
+				};
+			};
+		};
+	  };
+	
 
 };
